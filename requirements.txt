@@ -1,2 +1,4 @@
-python-telegram-bot==20.3
+aiogram
 aiohttp
+python-dotenv
+requests
