@@ -1,5 +1,9 @@
-from bot import app
-from aiohttp import web
+import asyncio
+from bot import bot, dp
+
+async def main():
+    print("🤖 Starting bot locally with polling mode...")
+    await dp.start_polling(bot)
 
 if __name__ == "__main__":
-    web.run_app(app, host="0.0.0.0", port=10000)
+    asyncio.run(main())
